@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | TalentHub Mtaani</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='contact-us.css') }}">
+  <style>
+    .flash-messages {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 1rem auto 0;
+    }
+
+    .flash-messages li {
+      background-color: #ffdede;
+      color: #a33;
+      padding: 0.8rem;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    .flash-messages li.success {
+      background-color: #e1fbe1;
+      color: green;
+    }
+
+    .flash-messages li.info {
+      background-color: #e0f0ff;
+      color: #004080;
+    }
+
+    .flash-messages li.error {
+      background-color: #ffeaea;
+      color: #d00000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">TalentHub Mtaani</div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('how_it_works') }}">How It Works</a></li>
+        <li><a href="{{ url_for('portfolio') }}">Talent Gallery</a></li>
+        <li><a href="{{ url_for('contact') }}" class="active">Contact Us</a></li>
+        <li><a href="{{ url_for('gigs') }}">Gigs</a></li>
+        <li><a href="{{ url_for('auth') }}">Login / Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p>If you have any questions, feedback, or opportunities you'd like to share, please fill out the form below:</p>
+
+      <!-- 📬 Form submits to backend -->
+      <form id="contact-form" action="{{ url_for('contact') }}" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <ul class="flash-messages">
+            {% for category, message in messages %}
+              <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endwith %}
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 TalentHub Mtaani. All rights reserved.</p>
+      <p>Empowering Kibra’s youth through talent and opportunity.</p>
+    </div>
+  </footer>
+</body>
+</html>

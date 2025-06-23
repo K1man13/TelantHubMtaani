@@ -1,0 +1,101 @@
+/* Contact Page */
+/* ✅ Center the contact section */
+.contact-section {
+  max-width: 600px;
+  margin: 4rem auto;
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section form {
+  text-align: left;
+}
+
+.contact-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-section button {
+  padding: 0.8rem 1.5rem;
+  background-color: #00d1b2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #00b89c;
+}
+.contact-section p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+/* ✅ Responsive Layout */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-section form,
+  .post-gig-form form {
+    padding: 0;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}

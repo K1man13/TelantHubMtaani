@@ -1,0 +1,10 @@
+[
+  {
+    "email": "kimani@example.com",
+    "password": "scrypt:32768:8:1$mUefnaCbEQIH4fGs$18a52bea9cba417e84595583bbb75ca6aefe7d3d593e1ab80ac5a6a5db905fb56a877bf690f132c08ea415e7ed0099d466a7de8e99d21dc0d092bfc4c625d2f9"
+  },
+  {
+    "email": null,
+    "password": "scrypt:32768:8:1$yacGmsmsw6l5Tovk$7b31a6b2be69615a708a63441668999814c5ee52bd6dff072ff46643b78a6f7f5a3f43eef7acb9d8fbace43fe62fdc6d99c677165826b8c1bd6fb57f71f712d3"
+  }
+]

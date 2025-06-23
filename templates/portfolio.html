@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Talent Gallery | TalentHub Mtaani</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='portfolio.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">TalentHub Mtaani</div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('how_it_works') }}">How It Works</a></li>
+        <li><a href="{{ url_for('portfolio') }}">Talent Gallery</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+        <li><a href="{{ url_for('gigs') }}" class="active">Gigs</a></li>
+        <li><a href="{{ url_for('auth') }}">Login / Signup</a></li>
+
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="portfolio">
+      <h1>Talent Gallery</h1>
+      <p>Explore the incredible talents from Kibra — from photography and coding to crafts and music.</p>
+
+      <div class="gallery">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Talent 1">
+          <h3>Street Photography</h3>
+          <p>Captured real moments during a community clean-up event in Kibra.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Talent 2">
+          <h3>Custom T-shirt Designs</h3>
+          <p>Unique screen-printed designs created by a local fashion student.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Talent 3">
+          <h3>Mobile App Demo</h3>
+          <p>A prototype for a school management system developed with Flutter.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Talent 4">
+          <h3>Hair Styling</h3>
+          <p>Creative braiding techniques styled by a youth entrepreneur in Kibra.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 TalentHub Mtaani. All rights reserved.</p>
+      <p>Empowering Kibra’s youth through talent and opportunity.</p>
+    </div>
+  </footer>
+</body>
+</html>

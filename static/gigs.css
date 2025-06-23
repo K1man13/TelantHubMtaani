@@ -1,0 +1,103 @@
+/* Gigs Section */
+.gigs-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.gig-list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.gig-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-left: 5px solid #00d1b2;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Post a Gig Form */
+.post-gig-form {
+  margin-top: 3rem;
+}
+
+.post-gig-form h2 {
+  color: #00d1b2;
+  margin-bottom: 1rem;
+}
+
+.post-gig-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post-gig-form input,
+.post-gig-form select,
+.post-gig-form textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.post-gig-form button {
+  padding: 0.8rem 1.5rem;
+  background-color: #00d1b2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.post-gig-form button:hover {
+  background-color: #00b89c;
+}
+/* ✅ Responsive Layout */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-section form,
+  .post-gig-form form {
+    padding: 0;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}

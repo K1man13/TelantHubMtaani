@@ -1,0 +1,90 @@
+/* How It Works Page */
+.how-it-works h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.how-it-works .step {
+  margin-top: 2rem;
+  padding-left: 1rem;
+  border-left: 4px solid #00d1b2;
+}
+
+.how-it-works .step h2 {
+  font-size: 1.3rem;
+  color: #00d1b2;
+  margin-bottom: 0.5rem;
+}
+
+.how-it-works .step p {
+  font-size: 1rem;
+  text-align: justify;
+}
+/* ✅ Container for layout and centering */
+.how-it-works {
+  max-width: 750px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  line-height: 1.7;
+  color: var(--secondary);
+}
+
+.how-it-works h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--bgDark);
+}
+
+/* Optional improvement for final paragraph */
+.how-it-works > p:last-of-type {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ✅ Responsive Layout */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-section form,
+  .post-gig-form form {
+    padding: 0;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}

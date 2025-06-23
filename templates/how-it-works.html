@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How It Works | TalentHub Mtaani</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='how-it-works.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">TalentHub Mtaani</div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('how_it_works') }}">How It Works</a></li>
+        <li><a href="{{ url_for('portfolio') }}">Talent Gallery</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+        <li><a href="{{ url_for('gigs') }}" class="active">Gigs</a></li>
+        <li><a href="{{ url_for('auth') }}">Login / Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="how-it-works">
+      <h1>How TalentHub Mtaani Works</h1>
+      <p>
+        TalentHub Mtaani helps youth in Kibra showcase their talents and connect with opportunities through five simple steps:
+      </p>
+
+      <div class="step">
+        <h2>Step 1: Create Your Profile</h2>
+        <p>
+          Sign up and build a digital portfolio by uploading photos of your work, describing your projects, and adding certificates. This makes your skills visible in the community.
+        </p>
+      </div>
+
+      <div class="step">
+        <h2>Step 2: Post or Apply for Gigs</h2>
+        <p>
+          Use the Gigs section to offer or apply for jobs, whether it's paid work, volunteer opportunities, or event-based roles such as performing or designing.
+        </p>
+      </div>
+
+      <div class="step">
+        <h2>Step 3: Access the Learning Hub</h2>
+        <p>
+          Learn and grow by exploring online courses or joining offline training events around Kibra to upgrade your skills.
+        </p>
+      </div>
+
+      <div class="step">
+        <h2>Step 4: Join the Mentorship Corner</h2>
+        <p>
+          Connect with experienced mentors for guidance — either virtually or in person — and receive support tailored to your field.
+        </p>
+      </div>
+
+      <div class="step">
+        <h2>Step 5: Geo-map Talents</h2>
+        <p>
+          Discover talents and gigs near you using a map, allowing for easy networking and collaboration within the Kibra community.
+        </p>
+      </div>
+
+      <p>
+        TalentHub Mtaani makes it easy to grow your talent, connect with mentors, and find real gigs — all from your neighborhood.
+      </p>
+    </section>
+  </main>
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2025 TalentHub Mtaani. All rights reserved.</p>
+        <p>Empowering Kibra’s youth through talent and opportunity.</p>
+    </div>
+    </footer>
+
+</body>
+</html>

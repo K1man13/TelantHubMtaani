@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile | TalentHub Mtaani</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='profile.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">TalentHub Mtaani</div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('how_it_works') }}">How It Works</a></li>
+        <li><a href="{{ url_for('portfolio') }}">Talent Gallery</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+        <li><a href="{{ url_for('gigs') }}" class="active">Gigs</a></li>
+        <li><a href="{{ url_for('auth') }}">Login / Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="profile-header">
+      <img src="https://via.placeholder.com/150" alt="User Photo" class="profile-img" />
+      <div class="profile-info">
+        <h1>Anthony Kimani</h1>
+        <p class="tagline">Photographer | Web Developer | Mentor</p>
+        <p class="bio">
+          Passionate about technology and storytelling through visuals. I use digital skills to empower local youth and help them grow their talents and visibility.
+        </p>
+        <p class="skills"><strong>Skills:</strong> HTML, CSS, JavaScript, Flutter, Photography, Graphic Design</p>
+      </div>
+    </section>
+
+    <section class="portfolio-preview">
+      <h2>My Projects</h2>
+      <div class="gallery">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1" />
+          <h3>Community Photography</h3>
+          <p>Captured stories from clean-up drives and youth mentorship sessions in Kibra.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2" />
+          <h3>TalentHub Mtaani Website</h3>
+          <p>Developed this site to help youth showcase talents and access gigs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-links">
+      <h2>Connect With Me</h2>
+      <p>Email: anthony@example.com</p>
+      <p>Instagram: <a href="#">@kimani_visuals</a></p>
+      <p>GitHub: <a href="#">github.com/anthony-kimani</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 TalentHub Mtaani. All rights reserved.</p>
+      <p>Empowering Kibra’s youth through talent and opportunity.</p>
+    </div>
+  </footer>
+</body>
+</html>

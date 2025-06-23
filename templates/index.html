@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TalentHub Mtaani</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">TalentHub Mtaani</div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('how_it_works') }}">How It Works</a></li>
+        <li><a href="{{ url_for('portfolio') }}">Talent Gallery</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+        <li><a href="{{ url_for('gigs') }}" class="active">Gigs</a></li>
+        <li><a href="{{ url_for('auth') }}">Login / Signup</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Empowering Kibra’s Youth through Talent</h1>
+      <p>Where Kibra Talent Meets Opportunity</p>
+      <a href="{{ url_for('how_it_works') }}" class="btn">Get Started Today</a>
+    </section>
+  </header>
+  <main class="content">
+        <section class="welcome-section">
+        <h2>Welcome to TalentHub Mtaani</h2>
+        <p>
+            TalentHub Mtaani is a digital platform designed to uplift the youth of Kibra, Nairobi, by connecting their talents to real-world opportunities. From coders and photographers to tailors and musicians, this hub exists to make sure no talent goes unnoticed.
+        </p>
+        <p>
+            We believe that every young person in Kibra deserves a chance to thrive, and that opportunity should be as close as their community. TalentHub Mtaani serves as a bridge — helping youth build digital portfolios, apply for gigs, learn skills, and find mentors.
+        </p>
+        </section>
+    </main>
+  <footer>
+  <div class="footer-container">
+    <p>&copy; 2025 TalentHub Mtaani. All rights reserved.</p>
+    <p>Empowering Kibra’s youth through talent and opportunity.</p>
+  </div>
+</footer>
+    
+</body>
+</html>
